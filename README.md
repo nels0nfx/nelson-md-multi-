@@ -125,3 +125,18 @@ Feel free to fork, deploy, and improve!
 
 - [@adiwajshing](https://github.com/adiwajshing) for the original Baileys
 - Levante-style bot system inspiration
+---
+
+## Configuration (Optional)
+
+If you want to customize your bot, you can create a `.env` file in the root directory and define the following:
+
+```env
+PORT=3000
+SESSION_ID=your-session-id
+BOT_PREFIX=!
+BOT_NAME=NelsonMD
+
+Thanks To
+	•	@adiwajshing for Baileys
+	•	@lyfe00011 for the inspiration
