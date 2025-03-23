@@ -48,19 +48,19 @@ Once the bot starts, visit:http://localhost:3000/start/YOURNAME
 ---
 
 [![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/new/github.com/nels0nfx/nelson-md-multi-)
-## Deploy on Replit
+### Deploy on Replit
 
 1.Create a new Replit project (Node.js)
-2.	Upload your files or clone the GitHub repo
-3.	Add a .replit file:run = "npm start"
-4.	Run the project and visit:https://your-repl-name.repl.co/start/YOURNAME
+2.Upload your files or clone the GitHub repo
+3.Add a .replit file:run = "npm start"
+4.Run the project and visit:https://your-repl-name.repl.co/start/YOURNAME
 
 ## Deploy on BotNet
 
-	1.	Visit Bot Hosting or similar VPS
-	2.	Create a new Node.js app
-	3.	Upload this bot or link the repo
-	4.	Set run command to:npm start
+1.Visit Bot Hosting or similar VPS
+2.Create a new Node.js app
+3.Upload this bot or link the repo
+4.Set run command to:npm start
 
 ---
 
