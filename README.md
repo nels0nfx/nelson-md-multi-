@@ -53,11 +53,30 @@ Once the bot starts, visit:http://localhost:3000/start/YOURNAME
 	3.	Upload this bot or link the repo
 	4.	Set run command to:npm start
 
+---
+
+## Deploy on Railway
+
+1. Go to [Railway](https://railway.app)
+2. Click **New Project** > **Deploy from GitHub**
+3. Select your `nelson-md-multi-` repository
+4. Set the Start command to:
+   ```bash
+   npm start
+
 ## Example Commands
 
 !ping   → Replies with pong!
 !help   → List all commands
 !about  → Bot information
+
+
+## Environment Variables
+
+SESSION_ID=YourSessionIdAfterScan
+PREFIX=!
+PORT=3000
+You can ignore SESSION_ID if you’re scanning from terminal
 
 ## Built With
 
