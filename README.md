@@ -2,6 +2,16 @@
 ![Baileys](https://img.shields.io/badge/Baileys-MD-orange)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
+## Table of Contents
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [How to Run Locally](#how-to-run-locally)
+- [Deployment](#deployment)
+- [Example Commands](#example-commands)
+- [Built With](#built-with)
+- [Author](#author)
+- [License](#license)
+
 # NelsonMD Multi-Session WhatsApp Bot
 
 ![GitHub Repo Stars](https://img.shields.io/github/stars/nelsonfx/nelson-md-multi-?style=flat)
@@ -23,120 +33,22 @@
 - ✅ Easy deployment to Railway, Replit, or BotNet  
 
 ---
-
-## Folder Structure
-
-nelson-md-multi/
-├── index.js             # Main bot file
-├── package.json         # Project config
-├── lib/
-│   └── commands.js      # Add your custom commands here
-├── sessions/            # Session files stored here
----
-
-## How to Run Locally
-
----
-
 ## One-Click Deployment
 
 ### Deploy to Railway  
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
 
 ### Deploy to Replit  
-[![Run on Replit](https://replit.com/badge/github/nelsonfx/nelson-md-multi-)](https://replit.com/github/nelsonfx/nelson-md-multi-)
-
-> Tip: Update the links above later with your actual template or repo deploy link!
-### 1. Clone and Install
-
-```bash
-git clone https://github.com/YourUsername/nelson-md-multi-.git
-cd nelson-md-multi-
-npm install
-node index.js
-Once the bot starts, visit:http://localhost:3000/start/YOURNAME
-
----
-
-[![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/new/github.com/nels0nfx/nelson-md-multi-)
-### Deploy on Replit
-
-1.Create a new Replit project (Node.js)
-2.Upload your files or clone the GitHub repo
-3.Add a .replit file:run = "npm start"
-4.Run the project and visit:https://your-repl-name.repl.co/start/YOURNAME
-
-## Deploy on BotNet
-
-1.Visit Bot Hosting or similar VPS
-2.Create a new Node.js app
-3.Upload this bot or link the repo
-4.Set run command to:npm start
-
----
-
-## Deploy on Railway
-
-1. Go to [Railway](https://railway.app)
-2. Click **New Project** > **Deploy from GitHub**
-3. Select your `nelson-md-multi-` repository
-4. Set the Start command to:
-   ```bash
-   npm start
+[![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/github/nels0nfx/nelson-md-multi-)
 
 ## Example Commands
 
+```bash
 !ping   → Replies with pong!
-!help   → List all commands
-!about  → Bot information
+!help   → Lists all commands
+!about  → Provides bot information
 
+## Acknowledgements
 
-## Environment Variables
-
-SESSION_ID=YourSessionIdAfterScan
-PREFIX=!
-PORT=3000
-You can ignore SESSION_ID if you’re scanning from terminal
-
-## Built With
-
-	•	Baileys
-	•	Node.js
-	•	Express.js
-
-
----
-
-## Author
-
-**Nelson Chinecherem (NelsonMD)**  
-Telegram: [@nelsonfx_admin](https://t.me/nelsonfx_admin)
-
----
-
-## License
-
-This project is licensed under the **MIT License**.  
-Feel free to fork, deploy, and improve!
-
----
-
-## Thanks To
-
-- [@adiwajshing](https://github.com/adiwajshing) for the original Baileys
-- Levante-style bot system inspiration
----
-
-## Configuration (Optional)
-
-If you want to customize your bot, you can create a `.env` file in the root directory and define the following:
-
-```env
-PORT=3000
-SESSION_ID=your-session-id
-BOT_PREFIX=!
-BOT_NAME=NelsonMD
-
-Thanks To
-	•	@adiwajshing for Baileys
-	•	@lyfe00011 for the inspiration
+- [Baileys](https://github.com/WhiskeySockets/Baileys) for the WhatsApp Web API
+- [Levante](https://github.com/lyfe00011/levanter) for project inspiration
