@@ -93,22 +93,6 @@ You can ignore SESSION_ID if you’re scanning from terminal
 	•	Node.js
 	•	Express.js
 
-## Author
-
-Nelson Chinecherem (NelsonMD)
-Telegram: @nelsonfx_admin
-
-## License
-
-This project is licensed under the MIT License
-
----
-
-## Built With
-
-- [Baileys](https://github.com/WhiskeySockets/Baileys) — WhatsApp Web API
-- [Node.js](https://nodejs.org/) — JavaScript Runtime
-- [Express.js](https://expressjs.com/) — Backend API Support
 
 ---
 
