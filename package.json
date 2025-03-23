@@ -1,0 +1,20 @@
+{
+  "name": "nelson-md-multi",
+  "version": "1.0.0",
+  "description": "Multi-session WhatsApp bot powered by Baileys and created by NelsonMD.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.1",
+    "pino": "^8.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "fs-extra": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Nelson Chinecherem",
+  "license": "MIT"
+}
