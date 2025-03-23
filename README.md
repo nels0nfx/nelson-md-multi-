@@ -97,3 +97,32 @@ Telegram: @nelsonfx_admin
 ## License
 
 This project is licensed under the MIT License
+
+---
+
+## Built With
+
+- [Baileys](https://github.com/WhiskeySockets/Baileys) — WhatsApp Web API
+- [Node.js](https://nodejs.org/) — JavaScript Runtime
+- [Express.js](https://expressjs.com/) — Backend API Support
+
+---
+
+## Author
+
+**Nelson Chinecherem (NelsonMD)**  
+Telegram: [@nelsonfx_admin](https://t.me/nelsonfx_admin)
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
+Feel free to fork, deploy, and improve!
+
+---
+
+## Thanks To
+
+- [@adiwajshing](https://github.com/adiwajshing) for the original Baileys
+- Levante-style bot system inspiration
