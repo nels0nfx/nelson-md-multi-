@@ -4,7 +4,11 @@
 
 # NelsonMD Multi-Session WhatsApp Bot
 
-NelsonMD is a powerful multi-session WhatsApp bot built using **Baileys**. It allows users to host their own bot sessions, scan their unique QR codes, and keep their session running — just like Levante.
+![GitHub Repo Stars](https://img.shields.io/github/stars/nelsonfx/nelson-md-multi-?style=flat)
+![Last Commit](https://img.shields.io/github/last-commit/nelsonfx/nelson-md-multi-?style=flat)
+![MIT License](https://img.shields.io/github/license/nelsonfx/nelson-md-multi-?style=flat)
+
+> NelsonMD is a powerful multi-session WhatsApp bot built using **Baileys**. It allows users to host their own bot sessions, scan their unique QR codes, and keep their session running — just like Levante.
 
 ---
 
