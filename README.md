@@ -1,3 +1,7 @@
+![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen)
+![Baileys](https://img.shields.io/badge/Baileys-MD-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 # NelsonMD Multi-Session WhatsApp Bot
 
 NelsonMD is a powerful multi-session WhatsApp bot built using **Baileys**. It allows users to host their own bot sessions, scan their unique QR codes, and keep their session running — just like Levante.
@@ -38,7 +42,7 @@ node index.js
 Once the bot starts, visit:http://localhost:3000/start/YOURNAME
 
 ---
-
+[![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/new/github.com/nels0nfx/nelson-md-multi-)
 ## Deploy on Replit
 
 1.	Create a new Replit project (Node.js)
