@@ -1,16 +1,21 @@
 {
   "name": "nelson-md-multi",
   "version": "1.0.0",
-  "description": "Multi-session WhatsApp bot like Levante",
+  "description": "Multi-session WhatsApp bot system built by NelsonMD",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Nelson Chinecherem",
-  "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.6.0",
     "pino": "^8.11.0",
-    "qrcode-terminal": "^0.12.0"
-  }
+    "qrcode-terminal": "^0.12.0",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Nelson Chinecherem",
+  "license": "MIT"
 }
