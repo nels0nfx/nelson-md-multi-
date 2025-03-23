@@ -36,6 +36,17 @@ nelson-md-multi/
 
 ## How to Run Locally
 
+---
+
+## One-Click Deployment
+
+### Deploy to Railway  
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
+
+### Deploy to Replit  
+[![Run on Replit](https://replit.com/badge/github/nelsonfx/nelson-md-multi-)](https://replit.com/github/nelsonfx/nelson-md-multi-)
+
+> Tip: Update the links above later with your actual template or repo deploy link!
 ### 1. Clone and Install
 
 ```bash
