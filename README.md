@@ -1,6 +1,6 @@
-# NelsonMD – Multi-Session WhatsApp Bot
+# NelsonMD Multi-Session WhatsApp Bot
 
-NelsonMD is a powerful multi-session WhatsApp bot built with **Baileys**. It allows each user to host their own bot session, scan their own QR code, and keep their session stored — just like Levante.
+NelsonMD is a powerful multi-session WhatsApp bot built using **Baileys**. It allows users to host their own bot sessions, scan their unique QR codes, and keep their session running — just like Levante.
 
 ---
 
@@ -16,10 +16,11 @@ NelsonMD is a powerful multi-session WhatsApp bot built with **Baileys**. It all
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
+
 nelson-md-multi/
-├── index.js               # Main bot file
-├── package.json           # Project config
+├── index.js             # Main bot file
+├── package.json         # Project config
 ├── lib/
-│   └── commands.js        # Add your custom commands here
-├── sessions/              # Session files stored here
+│   └── commands.js      # Add your custom commands here
+├── sessions/            # Session files stored here
