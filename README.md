@@ -38,9 +38,12 @@
 ### Deploy to Railway  
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
 
+
 ### Deploy to Replit  
 [![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/github/nels0nfx/nelson-md-multi-)
-
+1.Create a new Replit project (Node.js)
+2.Upload your files or clone the GitHub repo
+3.Add a .replit file:run = "npm start"
 ## Example Commands
 
 ```bash
