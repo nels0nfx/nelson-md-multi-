@@ -1,48 +1,68 @@
+const express = require('express');
+const fs = require('fs-extra');
+const path = require('path');
+const qrcode = require('qrcode-terminal');
 const {
   default: makeWASocket,
   useMultiFileAuthState,
-  DisconnectReason,
-  fetchLatestBaileysVersion
+  fetchLatestBaileysVersion,
+  DisconnectReason
 } = require('@whiskeysockets/baileys');
 const P = require('pino');
-const fs = require('fs');
-const path = require('path');
-const qrcode = require('qrcode-terminal');
 
-async function startBot() {
-  const { state, saveCreds } = await useMultiFileAuthState('./auth_info');
-  const { version, isLatest } = await fetchLatestBaileysVersion();
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('NelsonMD Multi-Session WhatsApp Bot is running.');
+});
+
+app.get('/start/:sessionId', async (req, res) => {
+  const sessionId = req.params.sessionId;
+  const sessionFolder = path.join(__dirname, 'sessions', sessionId);
+
+  await fs.ensureDir(sessionFolder);
+  const { state, saveCreds } = await useMultiFileAuthState(sessionFolder);
+  const { version } = await fetchLatestBaileysVersion();
 
   const sock = makeWASocket({
     version,
-    auth: state,
-    printQRInTerminal: true,
     logger: P({ level: 'silent' }),
-    browser: ['NelsonMD Multi', 'Chrome', '1.0'],
+    printQRInTerminal: true,
+    auth: state,
+    browser: ['NelsonMD Multi', 'Chrome', '1.0']
   });
 
   sock.ev.on('creds.update', saveCreds);
 
   sock.ev.on('connection.update', (update) => {
-    const { connection, lastDisconnect } = update;
+    const { connection, lastDisconnect, qr } = update;
+
+    if (qr) {
+      qrcode.generate(qr, { small: true });
+      console.log(`[${sessionId}] QR Code generated.`);
+    }
+
+    if (connection === 'open') {
+      console.log(`[${sessionId}] Connected!`);
+    }
 
     if (connection === 'close') {
-      const shouldReconnect = (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut);
-      console.log('Disconnected:', lastDisconnect?.error, 'Reconnecting:', shouldReconnect);
-      if (shouldReconnect) startBot();
-    } else if (connection === 'open') {
-      console.log('✅ NelsonMD Multi Bot connected successfully!');
+      const code = lastDisconnect?.error?.output?.statusCode;
+      if (code !== DisconnectReason.loggedOut) {
+        console.log(`[${sessionId}] Disconnected. Reconnecting...`);
+        setTimeout(() => {
+          app.get(`/start/${sessionId}`);
+        }, 3000);
+      } else {
+        console.log(`[${sessionId}] Logged out.`);
+      }
     }
   });
 
-  sock.ev.on('messages.upsert', async ({ messages, type }) => {
-    if (!messages || type !== 'notify') return;
-    const msg = messages[0];
-    const text = msg?.message?.conversation || msg?.message?.extendedTextMessage?.text;
-    if (text === 'ping') {
-      await sock.sendMessage(msg.key.remoteJid, { text: 'pong' }, { quoted: msg });
-    }
-  });
-}
+  res.send(`Session ${sessionId} starting... Check your terminal for the QR code.`);
+});
 
-startBot().catch((err) => console.error('Bot Error:', err));
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
