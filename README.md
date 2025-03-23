@@ -38,6 +38,10 @@
 ### Deploy to Railway  
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template)
 
+- Go to Railway
+- Click New Project > Deploy from GitHub Repo
+- Select your nelson-md-multi- repo
+- In Railway settings, set:Start command: npm start
 
 ### Deploy to Replit  
 [![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/github/nels0nfx/nelson-md-multi-)
