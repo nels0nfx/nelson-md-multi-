@@ -42,10 +42,11 @@ node index.js
 Once the bot starts, visit:http://localhost:3000/start/YOURNAME
 
 ---
+
 [![Run on Replit](https://replit.com/badge/github/nels0nfx/nelson-md-multi-)](https://replit.com/new/github.com/nels0nfx/nelson-md-multi-)
 ## Deploy on Replit
 
-1.	Create a new Replit project (Node.js)
+1.Create a new Replit project (Node.js)
 2.	Upload your files or clone the GitHub repo
 3.	Add a .replit file:run = "npm start"
 4.	Run the project and visit:https://your-repl-name.repl.co/start/YOURNAME
