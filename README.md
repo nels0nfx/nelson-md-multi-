@@ -17,3 +17,9 @@ NelsonMD is a powerful multi-session WhatsApp bot built with **Baileys**. It all
 ---
 
 ## 📁 Folder Structure
+nelson-md-multi/
+├── index.js               # Main bot file
+├── package.json           # Project config
+├── lib/
+│   └── commands.js        # Add your custom commands here
+├── sessions/              # Session files stored here
